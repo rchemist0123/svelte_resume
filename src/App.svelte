@@ -6,43 +6,42 @@
   import Homepage from './components/HomePage.svelte';
   import PortfolioPage from "./components/PortfolioPage.svelte";
   import Resume from './components/Resume.svelte';
-  let currentPage = 'home';
-
+  import Footer from './components/Footer.svelte';
+  import ContactMe from './components/ContactMe.svelte';
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+  let currentPage = 'home';  
   onMount(() => {
 
   })
 </script>
-
+<header>
+  <Navbar let:hidden let:toggle>
+    <NavBrand href="/">
+      <img src="/src/assets/svelte.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Logo</span>
+    </NavBrand>
+    <NavHamburger on:click={toggle} />
+    <NavUl {hidden}>
+      <NavLi on:click={()=>currentPage = 'home'}>Home</NavLi>
+      <NavLi on:click={()=>currentPage = 'resume'}>Resumé</NavLi>
+      <NavLi on:click={()=>currentPage = 'portfolio'}>Portfolio</NavLi>
+      <NavLi on:click={()=>currentPage = 'contact'}>Contact</NavLi>
+    </NavUl>
+  </Navbar>
+</header>
 <main>
   
-  <nav>
-    <button on:click={() => currentPage = 'home'}>Home</button>
-    <button on:click={() => currentPage = 'resume'}>Resumé</button>
-    <button on:click={() => currentPage = 'portfolio'}>Portfolio</button>
-    <button on:click={() => currentPage = 'contact'}>Contact</button>
-  </nav>
   {#if currentPage === 'home'}
     <Homepage />
   {:else if currentPage === 'portfolio'}
     <PortfolioPage />
   {:else if currentPage === 'resume'}
     <Resume />
+  {:else if currentPage === 'contact'}
+    <ContactMe />
   {/if}
-  
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1> -->
-
-
 
 </main>
-
 <style>
   /* .logo {
     height: 6em;

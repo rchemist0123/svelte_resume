@@ -1,10 +1,11 @@
 <script>
   import { typewriter } from "../lib/Typewriter";
+  import { Heading, P } from 'flowbite-svelte'
   // Any local states or logic for the home page
 </script>
 
-<h1>Welcome to My Portfolio</h1>
+<Heading tag="h1">Welcome to My Portfolio</Heading>
 <p 
   in:typewriter>
-  This is the home page of my portfolio. Here, you can learn more about me and my work
+  Yeonhoon Jang's Portfolio & Resumé
 </p>
