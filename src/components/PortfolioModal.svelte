@@ -1,5 +1,4 @@
 <script>
-  import { projects } from '../lib/PortfolioData.js';
   import { createEventDispatcher } from 'svelte';
   import { Modal,Button } from 'flowbite-svelte';
   export let item;

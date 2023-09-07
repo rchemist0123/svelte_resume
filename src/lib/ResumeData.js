@@ -14,7 +14,7 @@ let educations = [
 let careers = [
   {title: '분당서울대학교병원 디지털헬스케어연구사업부',
   period:'2021.06-2023.12',
-  description: '국민건강보험공단(NHIS), MIMIC-IV 데이터 분석, Korean Sepsis Alliance (KSA)'}
+  description: ['국민건강보험공단(NHIS)','MIMIC-IV', 'Korean Sepsis Alliance (KSA)']}
 ]
 
 let howIWork = [

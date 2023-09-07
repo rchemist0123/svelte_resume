@@ -5,6 +5,7 @@
 </script>
 
 <Heading tag="h1">Welcome to My Portfolio</Heading>
+<br>
 <p 
   in:typewriter>
   Yeonhoon Jang's Portfolio & Resumé

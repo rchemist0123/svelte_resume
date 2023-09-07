@@ -1,6 +1,6 @@
 <script>
-  import * as resume from '../lib/ResumeData.js';
-  import { Img, Heading, Hr, P } from 'flowbite-svelte';
+  import * as resume from '../../lib/ResumeData.js';
+  import { Img, Heading, Hr, List, Li } from 'flowbite-svelte';
 </script>
 
 <div class="outer">
@@ -20,40 +20,43 @@
       <Heading tag="h5">경력</Heading>
       <ul>
         {#each resume.careers as career}
-          <li>{career.title} | {career.period}
-            <span>{career.description}</span>
+          <li>
+            {career.title} | {career.period}
+            <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
+              {career.description}
+            </List>
           </li>
         {/each}
       </ul>
     </div>
     <div class='sec-resume-sub'>
       <Heading tag="h5">학력</Heading>
-      <ul>
+      <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
         {#each resume.educations as edu}
-          <li>{edu.title} | {edu.period}</li>
+          <Li>{edu.title} | {edu.period}</Li>
         {/each}
-      </ul>
+      </List>
     </div>
   </div>
   <div class="sec-resume skills">
     <Heading tag="h1" class="bottom-line">⚒️ 보유스킬</Heading>
     <Hr />
-    <ul>
+    <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
       {#each resume.skills as skill}
-        <li>
-          <p>{skill.title}: {skill.description}</p>
-        </li>
+        <Li>
+          {skill.title}: {skill.description}
+        </Li>
       {/each}
-    </ul>
+    </List>
   </div>
   <div class="sec-resume howiwork">
     <Heading tag="h1" class="bottom-line">💼 일하는 방식</Heading>
     <Hr />
-    <ul>
+    <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
       {#each resume.howIWork as work}
-        <li>{work}</li>
+        <Li>{work}</Li>
       {/each}
-    </ul>
+    </List>
   </div>
 </div>
 <style>

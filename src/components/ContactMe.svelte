@@ -10,7 +10,7 @@
     </div>
     <div class="sec-in">
       <Label for="message" class="mb-2">메시지</Label>
-      <Textarea placeholder="메시지를 입력해주세요!" rows=5 name="message" />
+      <Textarea placeholder="메시지를 입력해주세요" rows=5 name="message" />
       <Button type="submit">보내기</Button>
     </div>
 
