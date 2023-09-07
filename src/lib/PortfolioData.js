@@ -1,5 +1,6 @@
 export let projects = [
   {
+    id: 1,
     type: 'paper',
     title: "KSA Sepsis associated AKI 예측",
     summary: "KSA 레지스트리 데이터를 활용한 Sepsis-associated AKI 연구",
@@ -8,17 +9,24 @@ export let projects = [
                   "Korean sepsis alliance (KSA) registry 데이터 활용",
                   "Logistic regression, Subgroup analysis 진행"],
     role: '데이터 분석, 데이터 시각화',
-    link: '',
+    link: '#',
     period: '2022.10 - 2023.12'
   },
   {
+    id: 2,
     type: 'project',
     title: "HRA 대시보드 웹 어플리케이션",
     summary: "국민건강보험공단(NHIS) 데이터를 활용한 주요 질환 및 사망 예측모델 개발 및 대시보드 시각화",
-    situation:"",
-    description: ""
+    description: ["카카오페이보험의 요청에 따라 주요질환 (심장질환, 뇌졸중, 암, 당뇨, 고혈압, 대사증후군) 및 사망 예측 모델 개발 필요",
+      "R, SAS를 활용하여  심장질환, 뇌졸중, 암, 당뇨, 고혈압, 대사증후군, 사망 등 질병 발생 예측 및 건강점수 구현",
+    "R을 활용하여 예측대상 질병 별 코호트 구축, 통계분석 및 머신러닝 진행",
+    "R Shiny를 활용한 건강나이 및 건강점수 계산을 위한 웹 어플리케이션 대시보드 MVP 제작 "],
+    role: '데이터 분석, 대시보드 제작',
+    link: 'https://yeonhoon.shinyapps.io/KHC_HRA2/',
+    period: "2022.09-2023.01"
   },
   {
+    id:3,
     type: 'paper',
     title: "Association of Dexmedetomidine With New-Onset Atrial Fibrillation in Patients With Critical Illness",
     summary: "MIMIC-IV를 활용한 New-Onset Afib 연구",
@@ -34,6 +42,7 @@ export let projects = [
     period: '2021.10 - 2023.04'
   },
   {
+    id:4,
     type: 'paper',
     title: "The Risk of Type 2 Diabetes Mellitus according to Changes in Obesity Status in Late Middle-Aged Adults: A Nationwide Cohort Study of Korea",
     journal: "Diabetes & Metabolism Journal",
@@ -47,6 +56,7 @@ export let projects = [
     period: '2021.10 - 2023.04'
   },
   {
+    id:5,
     type: 'paper',
     title: "Changes of Body Mass Index and the Incidence of Hypertension in Late Middle Age: A Nationwide Cohort Study in South Korea",
     journal: "Korean Journal of Health Promotion",
