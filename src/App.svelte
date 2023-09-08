@@ -1,12 +1,8 @@
 <script>
-  // import svelteLogo from './assets/svelte.svg'
-  // import viteLogo from '/vite.svg'
-
-  import { onMount } from 'svelte';
+  import Footer from './components/Footer.svelte';
   import Homepage from './components/HomePage.svelte';
   import PortfolioPage from "./components/PortfolioPage.svelte";
   import Resume from './components/Resume.svelte';
-  import Footer from './components/Footer.svelte';
   import ContactMe from './components/ContactMe.svelte';
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
   let currentPage = 'home'; 
@@ -23,7 +19,7 @@
   <Navbar let:hidden let:toggle>
     <NavBrand href="/">
       <img src="/src/assets/svelte.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Logo</span>
+      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">My Resumé</span>
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {activeUrl} {hidden}>
@@ -45,5 +41,6 @@
     <ContactMe />
   {/if}
 </main>
+<Footer />
 <style>
 </style>

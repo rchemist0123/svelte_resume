@@ -1,11 +1,12 @@
 <script>
-  import * as resume from '../../lib/ResumeData.js';
+  import * as resume from '../lib/ResumeData.js';
   import { Img, Heading, Hr, List, Li } from 'flowbite-svelte';
 </script>
 
 <div class="outer">
   <div class="sec-resume intro">
-    <Img src="/src/assets/svelte.svg" alt="sample 1" size="max-w-xl" imgClass="h-30" alignment="mx-auto"/>
+    <Img src="/src/assets/meme.png" alt="My profile" class="rounded-full w-48 h-48" alignment="mx-auto"/>
+    <br />
     <p>안녕하세요! 헬스케어 데이터 분석을 좋아하는 장연훈입니다.</p>
     <p>헬스케어 데이터로 건강 문제를 해결하는 것에 관심이 많습니다.</p>
     <ul>
@@ -73,7 +74,7 @@
   }
   .sec-resume.intro {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 2rem;
   }
   .sec-resume-sub {
     margin-bottom: 1rem;

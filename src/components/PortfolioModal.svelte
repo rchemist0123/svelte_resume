@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import { Modal,Button } from 'flowbite-svelte';
+  import { Modal,Button, Heading, Hr} from 'flowbite-svelte';
+  // import { CheckCircleSolid } from 'flowbite-svelte-icons';
   export let item;
   export let open = false;
   const dispatch = createEventDispatcher();
@@ -9,12 +10,34 @@
 </script>
 
 <Modal title={item.title} bind:open={open} on:close={closeModal} outsideclose>
-  <p>{item.summary}</p>
-  <p>{item.description}</p>
-  <p>역할: {item.role}</p>
-  <p>기간: {item.period}</p>
-  <p>링크: <a href={item.link}>Link</a></p>
+  <div>
+    <!-- <CheckCircleSolid class='w5 h5' /> -->
+    <Heading tag="h4">Summary</Heading>
+    <p>{item.summary}</p>
+  </div>
+  <div>
+    <Heading tag="h4">Description</Heading>
+    <p>{item.description}</p>
+  </div>
+  <div>
+    <Heading tag="h4">Role</Heading>
+    <p>{item.role}</p>
+  </div>
+  <div>
+    <Heading tag="h4">Period</Heading>
+    <p>{item.period}</p>
+  </div>
+  <div>
+    <Heading tag="h4">Link</Heading>
+    <p><a href={item.link}>Link</a></p>
+  </div>
   <svelte:fragment slot="footer">
       <Button on:click={closeModal}>Close</Button>
   </svelte:fragment>
 </Modal>
+
+<style>
+   div {
+    text-align: left;
+  }
+</style>
