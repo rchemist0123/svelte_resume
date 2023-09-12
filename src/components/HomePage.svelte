@@ -7,11 +7,11 @@
 
 <div class="flex">
   <div id="section-1" class="flex-col justify-between">
-    <Heading tag="h1" class="after:content-['✋'] after:-skew-y-3 text-left">Healthcare Data scientist </Heading>
+    <Heading tag="h1" class="after:content-['✋'] after:-skew-y-3 text-left">Healthcare Data Scientist </Heading>
     <p 
       in:typewriter
       class="mt-5 text-left">
-      Hi! I like to handle, analyze and visualize healthcare data.
+      Hi! I like to handle, analyze and visualize healthcare data. South Korea📍
     </p>
     <div class="my-5 sm:flex sm:items-center sm:justify-left">
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">

@@ -19,7 +19,7 @@
   <Navbar let:hidden let:toggle class="">
     <NavBrand href="/">
       <!-- <img src="/src/assets/svelte.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> -->
-      <span class="self-center whitespace-nowrap text-xl text-black font-semibold dark:text-white">Yeonhoon Jang</span>
+      <span class="self-center whitespace-nowrap text-xl text-black font-semibold dark:text-white tracking-tight">Yeonhoon's Resumé</span>
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {activeUrl} {hidden}>
