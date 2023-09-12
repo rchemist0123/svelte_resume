@@ -3,7 +3,7 @@
   import { Img, Heading, Hr, List, Li } from 'flowbite-svelte';
 </script>
 
-<div class="outer">
+<div class="outer" id="section-2">
   <div class="sec-resume intro">
     <Img src="/src/assets/meme.png" alt="My profile" class="rounded-full w-48 h-48" alignment="mx-auto"/>
     <br />

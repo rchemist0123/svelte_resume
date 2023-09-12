@@ -16,7 +16,7 @@
 <Heading tag="h1">Projects & Papers</Heading >
 <Hr/>
 
-<div class="outer">
+<div class="outer" id="section-3">
   {#each projects as project}
     <div class="inner">
       <Card>

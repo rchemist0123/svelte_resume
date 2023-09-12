@@ -3,7 +3,7 @@
 </script>
 
 <form action="">
-  <div class="sec-out">
+  <div class="sec-out" id="section-4">
     <div class="sec-in">
       <Label for="email" class="mb-2">이메일 주소</Label>
       <Input type="email" id="email" name="email" placeholder = "이메일 주소" required/>
