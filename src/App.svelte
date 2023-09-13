@@ -25,7 +25,7 @@
     <NavHamburger on:click={toggle} />
     <NavUl {activeUrl} {hidden}>
       <NavLi href="#section-1" on:click={ scrollIntoView }>Home</NavLi>
-      <NavLi href="#section-2" on:click={ scrollIntoView }>Resumé</NavLi>
+      <NavLi href="#section-2" on:click={ scrollIntoView }>About</NavLi>
       <NavLi href="#section-3" on:click={ scrollIntoView }>Portfolio</NavLi>
       <NavLi href="#section-4" on:click={ scrollIntoView }>Contact</NavLi>
     </NavUl>

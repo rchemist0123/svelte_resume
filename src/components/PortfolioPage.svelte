@@ -19,19 +19,19 @@
     <p class="font-bold text-left text-md text-primary-600">PORTFOLIO</p>
     <p class="font-extrabold text-left text-md text-black my-2">Each project is a unique piece of anlaysis & development 🧩</p>
   </div>
-  <div class="max-w-md mx-auto bg-white">
-    <div class="flex">
-      <div class="shrink-0 pt-8">
-        <img class="h-48 w-sm object-cover rounded-xl" src="/src/assets/laptop.jpg" alt="Project" />
+  <div class="max-w-md mx-auto">
+    <div class="grid md:grid-cols-2">
+      <div class="pt-8">
+        <img class="h-48 mx-auto object-cover rounded-xl" src="/src/assets/laptop.jpg" alt="Project" />
       </div>
       <div class="p-8">
         <p class="font-extrabold">ICU NOAF (MIMIC-IV)</p>
         <p class="text-xs w-48 my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas impedit, odit obcaecati fuga quisquam illum atque quam inventore debitis a dolor sint ad numquam unde recusandae nobis. Itaque, ipsa iure?</p>
-        <p class="flex justify-between mx-5 my-4 font-bold">
+        <p class="mx-5 my-4 font-bold">
           <span class="text-xs">R</span>
           <span class="text-xs">PostgreSQL</span>
         </p>
-        <div class="flex justify-between">
+        <div class="">
           <a href="https://github.com/rchemist0123/KHC_dashboard" target="_blank" class="group text-slate-700 hover:text-primary-600 dark:text-white text-xs font-semibold my-auto">
             Code
             <svg class="inline-block w-5 h-5 text-black group-hover:text-primary-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
