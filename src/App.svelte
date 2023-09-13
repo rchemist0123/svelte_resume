@@ -1,8 +1,9 @@
 <script>
   import Footer from './components/Footer.svelte';
-  import Homepage from './components/HomePage.svelte';
-  import PortfolioPage from "./components/PortfolioPage.svelte";
+  import Intro from './components/Intro.svelte';
+  import About from './components/About.svelte';
   import Resume from './components/Resume.svelte';
+  import PortfolioPage from "./components/PortfolioPage.svelte";
   import ContactMe from './components/ContactMe.svelte';
   import { scrollIntoView } from './lib/JumpToSection.js';
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Skeleton, ImagePlaceholder, TextPlaceholder } from 'flowbite-svelte';
@@ -16,7 +17,7 @@
   $: activeUrl=pages[currentPage]
 </script>
 <div class="relative px-8">
-  <Navbar let:hidden let:toggle class="">
+  <Navbar let:hidden let:toggle navClass="sticky top-0">
     <NavBrand href="/">
       <!-- <img src="/src/assets/svelte.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> -->
       <span class="self-center whitespace-nowrap text-xl text-black font-semibold dark:text-white tracking-tight">Yeonhoon's Resumé</span>
@@ -29,9 +30,9 @@
       <NavLi href="#section-4" on:click={ scrollIntoView }>Contact</NavLi>
     </NavUl>
   </Navbar>
-  <div class="overflow-scroll pb-16 mt-48 max-w-2xl">
-    <Homepage/>
-    <Resume />
+  <div class="pb-16 mt-48 max-w-3xl">
+    <Intro />
+    <About />
     <PortfolioPage />
     <ContactMe />
   </div>

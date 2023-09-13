@@ -2,7 +2,7 @@
   import { Input, Label, Helper, Button, P, Textarea } from 'flowbite-svelte'
 </script>
 
-<form action="">
+<form action="" class="mt-60">
   <div class="sec-out" id="section-4">
     <div class="sec-in">
       <Label for="email" class="mb-2">이메일 주소</Label>
