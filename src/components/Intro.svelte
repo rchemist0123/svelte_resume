@@ -14,8 +14,8 @@
   ]
 </script>
 
-<div class="flex flex-col sm:flex-row justify-between">
-  <div id="section-1" class="flex-col justify-between max-w-lg mx-auto">
+<div class="flex flex-col sm:flex-row justify-between" id="section-1">
+  <div class="flex-col justify-between max-w-lg mx-auto">
     <Heading tag="h1" class="after:content-['👋🏻'] after:-skew-y-3 text-left">Healthcare Data Scientist </Heading>
     <p class="mt-3 text-left px-0 py-2 text-slate-400 text-md max-w-sm" in:typewriter>
       Hi, I like to handle, analyze and visualize healthcare data. South Korea📍
