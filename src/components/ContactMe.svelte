@@ -2,7 +2,7 @@
   import { Input, Label, Helper, Button, P, Textarea } from 'flowbite-svelte'
 </script>
 
-<div class="mt-40 max-w-lg mx-auto"> 
+<div class="mt-40 max-w-lg mx-auto" id="section-4"> 
   <div class="">
     <p class="font-bold text-left text-sm text-primary-600">CONTACT</p>
     <p class="font-extrabold text-left text-md text-black my-3">Don't hesitate! Hit me up!👇🏻</p>
