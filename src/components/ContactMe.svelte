@@ -3,11 +3,11 @@
 </script>
 
 <div class="mt-40 max-w-lg mx-auto" id="section-4"> 
-  <div class="">
-    <p class="font-bold text-left text-sm text-primary-600">CONTACT</p>
-    <p class="font-extrabold text-left text-md text-black my-3">Don't hesitate! Hit me up!👇🏻</p>
+  <div class="mx-auto">
+    <p class="font-bold md:text-left text-sm text-primary-600 ">CONTACT</p>
+    <p class="font-extrabold md:text-left text-md text-black my-3">Don't hesitate! Hit me up!👇🏻</p>
   </div>
-  <div class="grid grid-cols-2">
+  <div class="grid md:grid-cols-2">
     <div class="p-6 max-w-sm mx-auto bg-white rounded-xl flex items-center space-x-5">
       <div class="">
         <svg class="w-6 h-6 text-primary-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
