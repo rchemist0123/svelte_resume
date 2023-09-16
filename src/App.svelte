@@ -15,6 +15,12 @@
     portfolio: '#section-3',
     contact: '#section-4'
   }
+  let pages_arr = [
+    {name:'home',href:'#section-1', text: 'Home'},
+    {name:'about',href:'#section-2', text: 'About'},
+    {name:'portfolio',href:'#section-3', text: 'Portfolio'},
+    {name:'contact',href:'#section-4', text: 'Contact'},
+  ]
   $:activeUrl=pages[currentPage]
   let activeClass = 'text-primary-500 hover:text-primary-500 md:hover-text-primary-500';
   let nonActiveClass = 'hover:text-primary-500 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-500 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
@@ -26,26 +32,19 @@
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {activeUrl} {hidden} {activeClass} {nonActiveClass}>
-      <NavLi href="#section-1" on:click={()=>currentPage = 'home'}>Home</NavLi>
-      <NavLi href="#section-2" on:click={()=>currentPage = 'about'}>About</NavLi>
-      <NavLi href="#section-3" on:click={()=>currentPage = 'portfolio'}>Portfolio</NavLi>
-      <NavLi href="#section-4" on:click={()=>currentPage = 'contact'}>Contact</NavLi>
+      {#each pages_arr as page}
+        <NavLi href={page.href} on:click={()=>currentPage=page.name}>{page.text}</NavLi>
+      {/each}
     </NavUl>
   </Navbar>
   <div class="pb-16 mt-48 px-8">
-    <Intro />
-    <About />
-    <PortfolioPage />
-    <ContactMe />
+      <Intro />
+      <About />
+      <PortfolioPage />
+      <ContactMe />
   </div>
   <Footer />
 </div>
-  <!-- <Router {pages} /> -->
-<!-- <main>
-  {#if currentPage === 'home'}
-  {:else if currentPage === 'portfolio'}
-  {:else if currentPage === 'resume'}
-  {:else if currentPage === 'contact'}
-  {/if}
-</main> -->
+<style>
 
+</style>
