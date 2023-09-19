@@ -18,8 +18,8 @@
     <div class="text-left">
       <button class="group px-3 py-2 space-x-1 rounded-xl border-primary-400 bg-white 
         hover:scale-105 hover:outline-none hover:border-primary-400
-        focus:ring-primary-500 
-        focus:outline-none active:scale-95"
+        focus:ring-primary-500 focus:outline-none active:scale-95
+        active:ring-2 active:ring-primary-700"
         on:click={test}
       >
         <svg class="inline-block w-4 h-4 text-gray-800 group-hover:text-primary-600 group-focus:text-primary-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">

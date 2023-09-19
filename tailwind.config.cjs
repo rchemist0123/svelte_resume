@@ -20,6 +20,10 @@ const config = {
           800: '#CC4522',
           900: '#A5371B'
         }
+      },
+      fontSize: {
+        // sm: '15px',
+        // base: '18px'
       }
     },
   },

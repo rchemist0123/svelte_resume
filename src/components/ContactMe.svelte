@@ -1,8 +1,4 @@
-<script>
-  import { Input, Label, Helper, Button, P, Textarea } from 'flowbite-svelte'
-</script>
-
-<div class="mt-40 max-w-lg mx-auto" id="section-4"> 
+<section class="mt-40 max-w-lg mx-auto" id="section-4"> 
   <div class="mx-auto">
     <p class="font-bold md:text-left text-sm text-primary-600 ">CONTACT</p>
     <p class="font-extrabold md:text-left text-md text-black my-3">Don't hesitate! Hit me up!👇🏻</p>
@@ -19,32 +15,18 @@
         <p class="text-xs text-slate-500">Seongnam, South Korea</p>
       </div>
     </div>
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl flex items-center space-x-5">
+    <div class="p-6 max-w-sm bg-white rounded-xl flex items-center space-x-5">
       <div class="">
         <svg class="w-6 h-6 text-primary-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="m9.978 13.233 9.392-6.668a1.945 1.945 0 0 0-.186-.177L11.2.65A2 2 0 0 0 8.815.638L.8 6.4a1.928 1.928 0 0 0-.207.2l9.385 6.633Z"/>
           <path d="M11.181 14.864a2.007 2.007 0 0 1-2.382-.014L0 8.627V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8.573l-8.819 6.29Z"/>
         </svg>
-      </div>
+      </div> 
       <div class="text-left space-y-1">
         <p class="text-sm font-bold text-black">Mail</p>
         <p class="text-xs text-slate-500">danjang0123@gmail.com</p>
       </div>
     </div>
   </div>
-
-  <!-- <form action="" class="mt-20">
-    <div  id="section-4">
-      <div class="sec-in">
-        <Label for="email" class="mb-2">이메일 주소</Label>
-        <Input type="email" id="email" name="email" placeholder = "이메일 주소" required/>
-      </div>
-      <div class="">
-        <Label for="message" class="mb-2">메시지</Label>
-        <Textarea placeholder="메시지를 입력해주세요" rows=5 name="message" />
-        <Button type="submit">보내기</Button>
-      </div>
-    </div>
-  </form> -->
-</div>
+</section>
 

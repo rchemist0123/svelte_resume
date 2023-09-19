@@ -30,8 +30,7 @@
   onMount(()=>{
     async function check(){
       await tick();
-      const sections = document.querySelectorAll('section[id]')
-      console.log(sections[0].children)
+      // const sections = document.querySelectorAll('section[id]')
     }
     check()
   })

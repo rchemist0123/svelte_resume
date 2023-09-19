@@ -14,7 +14,7 @@
   ]
 </script>
 
-<div class="flex flex-col sm:flex-row justify-between" id="section-1">
+<section class="flex flex-col sm:flex-row justify-between" id="section-1">
   <div class="flex-col justify-between max-w-lg mx-auto">
     <Heading tag="h1" class="after:content-['👋🏻'] after:-skew-y-3 text-left">Healthcare Data Scientist </Heading>
     <p class="mt-3 text-left px-0 py-2 text-slate-400 text-md max-w-sm" in:typewriter>
@@ -35,7 +35,7 @@
     </div>
   </div>
   <img class="w-60 h-60 mx-auto rounded-full border border-black" src="/src/assets/meme.png" alt="" >
-</div>
+</section>
 
 
 <div class="my-10 flex justify-between">
