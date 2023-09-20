@@ -14,10 +14,10 @@
   }
 </script>
 
-<section class="mt-60 max-w-xl mx-auto" id="section-3">
+<section class="max-w-xl mx-auto" id="section-3">
   <div class="">
     <p class="font-bold text-left text-md text-primary-600">PORTFOLIO</p>
-    <p class="font-extrabold text-left text-md text-black my-3">Each project is a unique piece of anlaysis & development 🧩</p>
+    <p class="font-extrabold text-left text-md text-black my-3 dark:text-white">Each project is a unique piece of anlaysis & development 🧩</p>
   </div>
   <div class="mx-auto">
     <div class="grid md:grid-cols-2">
@@ -25,11 +25,11 @@
         <img class="w-64 h-48 mx-auto rounded-xl " src="/src/assets/JAMA_network_thumbnail.png" alt="mimic4_NOAF" />
       </div>
       <div class="p-6">
-        <p class="font-extrabold pb-3 after:content-['🏥']">ICU NOAF (MIMIC-IV)</p>
+        <p class="font-extrabold pb-3 after:content-['🏥'] dark:text-white">ICU NOAF (MIMIC-IV)</p>
         <p class="text-xs w-40 mx-auto text-slate-400">With MIMIC-IV data, new-onset atrial fibrillation, Cox regression, Subgroup analysis</p>
         <div class="mx-auto my-5 font-bold grid grid-cols-5 gap-3">
-          <p class="text-xs col-start-2 col-end-3">R</p>
-          <p class="text-xs col-start-3 col-end-4">PostgreSQL</p>
+          <p class="text-xs col-start-2 col-end-3 dark:text-white">R</p>
+          <p class="text-xs col-start-3 col-end-4 dark:text-white">PostgreSQL</p>
         </div>
         <div class="mx-auto">
           <a href="https://github.com/rchemist0123/MIMIC_IV_NOAF.git" target="_blank" class="group text-slate-700 hover:text-primary-500 dark:text-white text-xs font-semibold mx-2 active:text-primary-600">
@@ -51,12 +51,12 @@
   <div class="mx-auto my-32">
     <div class="grid md:grid-cols-2">
       <div class="p-6">
-        <p class="font-extrabold pb-3 after:content-['📊']">KHC HRA dashboard</p>
+        <p class="font-extrabold pb-3 after:content-['📊'] dark:text-white">KHC HRA dashboard</p>
         <p class="text-xs w-40 mx-auto text-slate-400">Check your biological age & health scores by health examination. Survey and Dashboard are included.</p>
         <div class="mx-auto my-5 font-bold space-x-2">
-          <p class="inline-block text-xs col-start-1 col-end-2">Shiny</p>
-          <p class="inline-block text-xs col-start-2 col-end-3">CSS</p>
-          <p class="inline-block text-xs col-start-3 col-end-4">Javascript</p>
+          <p class="inline-block text-xs col-start-1 col-end-2 dark:text-white">Shiny</p>
+          <p class="inline-block text-xs col-start-2 col-end-3 dark:text-white">CSS</p>
+          <p class="inline-block text-xs col-start-3 col-end-4 dark:text-white">Javascript</p>
         </div>
         <div class="mx-auto">
           <a href="https://github.com/rchemist0123/KHC_dashboard" target="_blank" class="group text-slate-700 hover:text-primary-500 dark:text-white text-xs font-semibold mx-2 active:text-primary-600">
@@ -84,11 +84,11 @@
         <img class="w-64 h-48 mx-auto rounded-xl object-cover" src="/src/assets/dmj.png" alt="mimic4_NOAF" />
       </div>
       <div class="p-6">
-        <p class="font-extrabold pb-3 after:content-['📝']">T2DM risk & BMI (NHIS)</p>
+        <p class="font-extrabold pb-3 after:content-['📝'] dark:text-white">T2DM risk & BMI (NHIS)</p>
         <p class="text-xs w-40 mx-auto text-slate-400">The association between BMI change in middle age and T2DM incidence. Risk factors of T2DM.</p>
         <div class="mx-auto my-5 font-bold space-x-10">
-          <p class="inline-block text-xs">R</p>
-          <p class="inline-block text-xs">SAS</p>
+          <p class="inline-block text-xs dark:text-white">R</p>
+          <p class="inline-block text-xs dark:text-white">SAS</p>
         </div>
         <div class="mx-auto">
           <a href="https://github.com/rchemist0123/NHIS_T2DM_HTN_ASCVD.git" target="_blank" class="group text-slate-700 hover:text-primary-500 dark:text-white text-xs font-semibold mx-2 active:text-primary-600">

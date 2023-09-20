@@ -7,7 +7,7 @@
   import PortfolioPage from "./components/PortfolioPage.svelte";
   import ContactMe from './components/ContactMe.svelte';
   import { scrollIntoView } from './lib/JumpToSection.js';
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Skeleton, ImagePlaceholder, TextPlaceholder } from 'flowbite-svelte';
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode, Button } from 'flowbite-svelte';
   import '../app.css';
   // import { divs } from './main.js'
   let currentPage = 'home'; 
@@ -41,17 +41,31 @@
   function closeResume(event){
     showResume = false;
   }
+  function toggleDark(){
+    const body = document.querySelector('body')
+    body.classList.toggle('dark')
+  }
 
 </script>
-<div class="max-w-4xl">
+<div>
   <Navbar let:hidden let:toggle navClass="sticky top-0 navigation">
     <NavBrand href="/">
       <span class="self-center whitespace-nowrap text-xl text-black font-semibold dark:text-white tracking-tight">Yeonhoon's Resumé</span>
     </NavBrand>
-    <NavHamburger on:click={toggle} />
+    <div class="flex md:order-2">
+      <Button color="none" data-collapse-toggle="mobile-menu-3" aria-controls="mobile-menu-3" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+        <DarkMode />
+      </Button>
+      <div class="hidden relative md:block">
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3">
+          <DarkMode />
+        </div>
+      </div>
+      <NavHamburger on:click={toggle} />
+    </div>
     <NavUl {activeUrl} {hidden} {activeClass} {nonActiveClass}>
       {#each pages_arr as page}
-        <NavLi navClass="" href={page.href} on:click={()=>currentPage=page.name}>{page.text}</NavLi>
+      <NavLi navClass="" href={page.href} on:click={()=>currentPage=page.name}>{page.text}</NavLi>
       {/each}
     </NavUl>
   </Navbar>
