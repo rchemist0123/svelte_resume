@@ -48,7 +48,7 @@
 
 </script>
 <div>
-  <Navbar let:hidden let:toggle navClass="sticky top-0 navigation">
+  <Navbar let:hidden let:toggle navClass="sticky top-0 navigation dark:bg-slate-900">
     <NavBrand href="/">
       <span class="self-center whitespace-nowrap text-xl text-black font-semibold dark:text-white tracking-tight">Yeonhoon's Resumé</span>
     </NavBrand>

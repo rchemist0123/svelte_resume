@@ -38,7 +38,7 @@
     <img class="w-60 h-60 mx-auto rounded-full border border-black" src="/src/assets/meme.png" alt="" >
   </section>
   <div class="my-10 flex justify-between">
-    <p class="font-semibold text-black text-xl">Tech Stack</p>
+    <p class="font-semibold text-black text-xl dark:text-white">Tech Stack</p>
     <p> | </p>
     {#each sources as source}
     <img src={source.dir} alt={source.alt} class="h-6 w-6 my-1 hover:scale-125 transition duration-200"/>
