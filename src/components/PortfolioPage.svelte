@@ -5,33 +5,33 @@
   import PortfolioModal from './PortfolioModal.svelte';
   let clickOutsideModal = false;
   let selectedItem = null;
-  const openModal = (item) => {
-    clickOutsideModal = true
-    selectedItem = item
-  }
+  // const openModal = (item) => {
+  //   clickOutsideModal = true
+  //   selectedItem = item
+  // }
 
-  const closeModel = () => {
-    clickOutsideModal = false
-  }
+  // const closeModel = () => {
+  //   clickOutsideModal = false
+  // }
 
   const info = [
-    {title:"ICU NOAF (MIMIC-IV)", detail:"With MIMIC-IV data, new-onset atrial fibrillation, Cox regression, Subgroup analysis.", 
+    {title:"ICU NOAF (MIMIC-IV)", detail:"MIMIC-IV 데이터를 활용해 Dexmedetomidine 사용에 따른 ICU 환자들의 New onset Afib 에 대해 분석. PSM matching, MICE, Subgroup analaysis, Cox regression, Sensitivity analysis", 
     image:"/src/assets/JAMA_network_thumbnail.png", skill:"R PostgreSQL",
       github:"https://github.com/rchemist0123/MIMIC_IV_NOAF.git", link: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2804042"},
-    {title:"KHC HRA dashboard", detail:"Check your biological age & health scores by health examination. Survey and Dashboard are included.", 
+    {title:"KHC HRA dashboard", detail:"국민건강보험공단 표본코호트(NHIS-NSC)를 활용해 모델링한 건강 나이(Biological age, BA), 건강점수를 웹 대시보드로 구현.", 
     image:"/src/assets/khc.gif", skill:"Shiny CSS Javascript",
       github:"https://github.com/rchemist0123/KHC_dashboard", link: "https://yeonhoon.shinyapps.io/KHC_HRA2/"},
-    {title:"T2DM risk & BMI (NHIS)", detail:"The association between BMI change in middle age and T2DM incidence. Risk factors of T2DM.", 
+    {title:"T2DM risk & BMI (NHIS)", detail:"국민건강보험공단 건강검진코호트(NHIS-HEALS)를 활용해 52세 전후 검진의 BMI 변화에 따른 2형당뇨(T2DM)의 위험을 비교. PSM matching, Subgroup anlaysis, Cox regression", 
     image:"/src/assets/dmj.png", skill:"R SAS",
       github:"https://github.com/rchemist0123/NHIS_T2DM_HTN_ASCVD.git", link: "https://www.e-dmj.org/journal/view.php?number=2744"},
   ]
 
 </script>
 
-<section class="px-5 md:px-20 dark:bg-slate-800" id="section-3">
+<section class="px-5 md:px-20 md:pb-20 dark:bg-slate-800" id="section-3">
   <div class="py-5 md:py-20 flex flex-col items-center">
     <p class="font-extrabold text-lg text-primary-600">PORTFOLIO</p>
-    <p class="font-bold text-md text-black my-3 dark:text-white">Each project is a unique piece of anlaysis & development 🧩</p>
+    <p class="font-bold text-md text-black my-3 dark:text-white">담당했던 논문과 프로젝트 목록입니다 🧩</p>
   </div>
   <div class="flex flex-col justify-center gap-32">
     {#each info as i}
