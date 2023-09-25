@@ -1,6 +1,5 @@
 <script>
   import { onMount, tick, beforeUpdate, afterUpdate } from 'svelte';
-  import { secLoc } from './lib/store.js';
   import NavPage from './components/NavPage.svelte';
   import Intro from './components/Intro.svelte';
   import About from './components/About.svelte';
@@ -8,8 +7,9 @@
   import PortfolioPage from "./components/PortfolioPage.svelte";
   import ContactMe from './components/ContactMe.svelte';
   import Footer from './components/Footer.svelte';
-  import { scrollIntoView } from './lib/JumpToSection.js';
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode, Button } from 'flowbite-svelte';
+  import ScrollTopBtn from './components/ScrollTopBtn.svelte';
+  // import { scrollIntoView } from './lib/JumpToSection.js';
+  // import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode, Button } from 'flowbite-svelte';
   import '../app.css';
   // import { divs } from './main.js'
   let currentPage = 'home'; 
@@ -44,23 +44,19 @@
         href.classList.add("text-primary-500");
       })
     });
+    let scroller = document.getElementById("scroller");
   })
   
   let showResume = false;
   function openResume(){
     showResume = true;
     window.scrollTo({top:0, behavior: 'auto'})
-
   }
   async function closeResume(){
     showResume = false;
     await tick();
     const sec2loc = document.querySelector("#section-2");
     sec2loc.scrollIntoView({behavior: "smooth", block: "start"});
-
-    // console.log(section2start);
-    // window.scrollTo({top:section2start, behavior:'smooth'});
-    // window.scrollTo(0,0);
   }
 </script>
 
@@ -85,10 +81,16 @@
     {/each}
   </NavUl>
 </Navbar> -->
-{#if showResume === true}
+<!-- <div class="relative"> -->
+  <!-- </div> -->
+  {#if showResume === true}
   <Resume on:backToPage={closeResume}/>
-{:else}
+  {:else}
   <NavPage />
+  <ScrollTopBtn />
+  <div class="sticky right-0 bg-gray-200 rounded-full w-2.5 dark:bg-gray-700" >
+    <div class="bg-blue-600 h-full w-2.5 rounded-full" id="scroller"></div>
+  </div>
   <Intro />
   <About on:resumetest={openResume}/>
   <PortfolioPage />
