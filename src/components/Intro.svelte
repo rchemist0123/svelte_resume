@@ -18,19 +18,19 @@
   <section class="container mx-auto flex flex-col justify-center md:flex-row items-center gap-4" >
     <!-- left -->
     <div class="my-auto flex flex-col gap-5 text-center md:w-2/5 md:text-left">
-      <h1 class="text-5xl font-bold after:content-['👋🏻'] after:-skew-y-3 dark:text-white md:text-left">헬스케어<br>데이터분석가</h1>
+      <h1 class="text-5xl font-bold after:content-['👋🏻'] after:-skew-y-3 dark:text-white md:text-left ">헬스케어<br>데이터분석가</h1>
       <p class="text-gray-400">
         안녕하세요! 데이터를 다루고, 분석하고, 시각화하는 것을 좋아합니다. 개발은 취미입니다 🤣
       </p>
       <div class="flex mt-4 space-x-6 justify-center md:justify-start md:mt-0">
         <FooterIcon href="https://github.com/rchemist0123">
-          <GithubSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
+          <GithubSolid class="w-4 h-4 text-black dark:text-white hover:text-primary-600" />
         </FooterIcon>
         <FooterIcon href="https://www.linkedin.com/in/danjang0123/">
-          <LinkedinSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
+          <LinkedinSolid class="w-4 h-4 text-black dark:text-white hover:text-primary-600" />
         </FooterIcon>    
         <FooterIcon href="https://rchemistblog.com/">
-          <BookSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
+          <BookSolid class="w-4 h-4 text-black dark:text-white hover:text-primary-600" />
         </FooterIcon>    
       </div>
     </div>
@@ -40,15 +40,10 @@
         <img src="/src/assets/meme.png" alt="" >
       </div>
     </div>
-
-
-    <!-- <div class="md:h-full rounded-full border border-black"> 
-      <img src="/src/assets/meme.png" alt="" >
-    </div> -->
   </section>
   <div class="mx-auto py-10 flex flex-col flex-wrap md:flex-row gap-5 justify-center">
     <p class="font-semibold text-black text-xl dark:text-white">Skills</p>
-    <div class="grid grid-cols-4 justify-items-center md:flex md:flex-row md:gap-5 md:justify-center">
+    <div class="grid grid-cols-4 justify-items-center md:flex md:flex-row md:gap-20 md:justify-center">
       {#each sources as source}
         <img src={source.dir} alt={source.alt} class="h-6 w-6 my-1 hover:scale-125 transition duration-200"/>
         <Tooltip>{source.alt}</Tooltip>

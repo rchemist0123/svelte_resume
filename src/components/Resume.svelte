@@ -12,7 +12,7 @@
 
 </script>
 
-<section>
+<section class='p-20'>
   <div class="text-center mt-2">
     <Img src="/src/assets/meme.png" alt="My profile" class="rounded-full w-48 h-48 border-4 border-primary-500" alignment="mx-auto"/>
     <br />
@@ -20,8 +20,8 @@
     <p><span class="underline decoration-wavy decoration-primary-500">데이터 분석,웹개발</span> 등 코딩하는 것을 좋아합니다.</p>
     <p>헬스케어 데이터로 건강 문제를 해결하는 것에 관심이 많습니다.</p>
     <ul class="my-2">
-      <li class="before:content-['✉️']"> Email:  <a href="mailto:danjang0123@gmail.com">danjang0123@gmail.com</a></li>
-      <li>🖇️ SNS: <a href="https://www.linkedin.com/in/danjang0123/">Linkedin</a></li>
+      <li class="before:content-['✉️']"> Email: <a class="hover:text-primary-500"href="mailto:danjang0123@gmail.com">danjang0123@gmail.com</a></li>
+      <li>🖇️ SNS: <a class="hover:text-primary-500" href="https://www.linkedin.com/in/danjang0123/">Linkedin</a></li>
     </ul>
   </div>
   <div class="text-left my-20">
