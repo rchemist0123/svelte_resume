@@ -1,5 +1,6 @@
 <script>
   import { onMount, tick, beforeUpdate, afterUpdate } from 'svelte';
+  import { secLoc } from './lib/store.js';
   import NavPage from './components/NavPage.svelte';
   import Intro from './components/Intro.svelte';
   import About from './components/About.svelte';
@@ -43,27 +44,23 @@
         href.classList.add("text-primary-500");
       })
     });
-
-    async function check(){
-      await tick();
-      // const sections = document.querySelectorAll('section[id]')
-    }
-    check()
   })
-  let showResume = false;
-  function openResume(event){
-    showResume = true;
-  }
-  function closeResume(event){
-    showResume = false;
-  }
-  function toggleDark(){
-    const body = document.querySelector('body')
-    body.classList.toggle('dark')
-  }
   
-  $:checkHref = () => {
+  let showResume = false;
+  function openResume(){
+    showResume = true;
+    window.scrollTo({top:0, behavior: 'auto'})
 
+  }
+  async function closeResume(){
+    showResume = false;
+    await tick();
+    const sec2loc = document.querySelector("#section-2");
+    sec2loc.scrollIntoView({behavior: "smooth", block: "start"});
+
+    // console.log(section2start);
+    // window.scrollTo({top:section2start, behavior:'smooth'});
+    // window.scrollTo(0,0);
   }
 </script>
 
