@@ -7,21 +7,19 @@
   }
 
 </script>
-<section class="px-16 dark:bg-slate-800" id="section-2">
-  <div class="container mx-auto py-40 flex flex-col-reverse md:flex-row items-center gap-20">
-    <!-- left -->
-    <div class="relative md:w-2/3 ">
-      <div class="h-full rounded-3xl">
-        <img src="/src/assets/laptop.jpg" alt="" />
-      </div>
+<section class="px-5 md:px-40 dark:bg-slate-800" id="section-2">
+  <!-- left -->
+  <div class=" py-20 md:py-40 flex flex-col-reverse items-center md:flex-row gap-10">
+    <div class="w-11/12">
+      <img class="rounded-3xl" src="/src/assets/laptop.jpg" alt="" />
     </div>
     <!-- right -->
-    <div class="my-auto flex flex-col gap-2 text-left">
-      <p class="font-extrabold text-sm text-primary-600">ABOUT ME</p>
-      <p class="font-semibold text-sm dark:text-white">A passionate data analyst based in Seongnam, South Korea📍</p>
-      <p class="text-slate-400 text-xs">Mainly use R as a data scientist. Eager to work effectively. Like to develop Web pages, which is one of my favorite hobbies.</p>
+    <div class="my-auto flex flex-col gap-4 text-center md:text-left">
+      <p class="font-extrabold text-lg text-primary-600">ABOUT ME</p>
+      <p class="font-semibold text-md dark:text-white">코딩을 통한 효율적인 업무 처리</p>
+      <p class="text-slate-400 text-md">헬스케어 데이터를 다루는 데이터 분석가입니다. 코딩이 재밌어서 SQL, 웹 개발도 공부하였습니다. 지금은 취미로 웹 개발을 하고 있습니다. 효율성을 가장 중요하게 생각합니다. 일을 완료할 때 느끼는 성취감을 좋아합니다.</p>
       <div class="">
-        <button class="group px-3 py-1 rounded-xl border-primary-400 bg-white 
+        <button class="group px-4 py-2 rounded-xl border-primary-400 bg-white 
           hover:outline-none hover:border-primary-400
           focus:ring-primary-500 focus:outline-none active:scale-95
           active:ring-1 active:ring-primary-700
@@ -37,6 +35,5 @@
         </button>
       </div>
     </div>
-
   </div>
 </section>

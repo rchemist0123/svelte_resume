@@ -14,36 +14,46 @@
   ]
 </script>
 
-<div class="px-36">
-  <section class="flex flex-col md:flex-row justify-between" id="section-1">
-    <div class="flex-col justify-between max-w-lg mx-auto">
-      <Heading tag="h1" class="after:content-['👋🏻'] after:-skew-y-3 text-left">Healthcare Data Scientist </Heading>
-      <p class="mt-3 text-left px-0 py-2 text-slate-400 text-md max-w-sm" in:typewriter>
-        Hi, I like to handle, analyze and visualize healthcare data. South Korea📍
+<div id="section-1" class="px-5 md:px-20 pt-36 dark:bg-slate-800">
+  <section class="container mx-auto flex flex-col justify-center md:flex-row items-center gap-4" >
+    <!-- left -->
+    <div class="my-auto flex flex-col gap-5 text-center md:w-2/5 md:text-left">
+      <h1 class="text-5xl font-bold after:content-['👋🏻'] after:-skew-y-3 dark:text-white md:text-left">헬스케어<br>데이터분석가</h1>
+      <p class="text-gray-400">
+        안녕하세요! 데이터를 다루고, 분석하고, 시각화하는 것을 좋아합니다. 개발은 취미입니다 🤣
       </p>
-      <div class="my-5 sm:flex sm:items-center sm:justify-left">
-        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <FooterIcon href="https://github.com/rchemist0123">
-            <GithubSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
-          </FooterIcon>
-          <FooterIcon href="https://www.linkedin.com/in/danjang0123/">
-            <LinkedinSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
-          </FooterIcon>    
-          <FooterIcon href="https://rchemistblog.com/">
-            <BookSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
-          </FooterIcon>    
-        </div>
+      <div class="flex mt-4 space-x-6 justify-center md:justify-start md:mt-0">
+        <FooterIcon href="https://github.com/rchemist0123">
+          <GithubSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
+        </FooterIcon>
+        <FooterIcon href="https://www.linkedin.com/in/danjang0123/">
+          <LinkedinSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
+        </FooterIcon>    
+        <FooterIcon href="https://rchemistblog.com/">
+          <BookSolid class="w-4 h-4 text-black dark:text-white hover:text-gray-900" />
+        </FooterIcon>    
       </div>
     </div>
-    <img class="w-60 h-60 mx-auto rounded-full border border-black" src="/src/assets/meme.png" alt="" >
+    <!-- right -->
+    <div class="">
+      <div class="max-w-xs rounded-full">
+        <img src="/src/assets/meme.png" alt="" >
+      </div>
+    </div>
+
+
+    <!-- <div class="md:h-full rounded-full border border-black"> 
+      <img src="/src/assets/meme.png" alt="" >
+    </div> -->
   </section>
-  <div class="my-10 flex justify-between">
-    <p class="font-semibold text-black text-xl dark:text-white">Tech Stack</p>
-    <p> | </p>
-    {#each sources as source}
-    <img src={source.dir} alt={source.alt} class="h-6 w-6 my-1 hover:scale-125 transition duration-200"/>
-    <Tooltip>{source.alt}</Tooltip>
-    {/each}
+  <div class="mx-auto py-10 flex flex-col flex-wrap md:flex-row gap-5 justify-center">
+    <p class="font-semibold text-black text-xl dark:text-white">Skills</p>
+    <div class="grid grid-cols-4 justify-items-center md:flex md:flex-row md:gap-5 md:justify-center">
+      {#each sources as source}
+        <img src={source.dir} alt={source.alt} class="h-6 w-6 my-1 hover:scale-125 transition duration-200"/>
+        <Tooltip>{source.alt}</Tooltip>
+      {/each}
+    </div>
   </div>
 </div>
 

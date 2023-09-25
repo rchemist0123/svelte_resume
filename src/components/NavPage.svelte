@@ -10,13 +10,13 @@
     const body = document.querySelector('body')
     body.classList.toggle('dark')
   }
-  let currentPage = 'home'; 
+  let currentPage = 'home';
+   
 </script>
-<nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
-    <div class="container mx-auto py-5 flex items-center justify-between">
+<nav class="w-full sticky top-0 bg-white dark:bg-slate-900 z-10">
+    <div class="mx-auto p-5 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <img class="w-8" src="/src/assets/favicon.png" alt="" />
-        <span class="text-3xl font-caveat font-extrabold italic text-primary-500 dark:text-white">Yeonhoon's Resumé</span>
+        <span class="text-3xl font-caveat font-extrabold italic text-primary-500 dark:text-white">Resumé</span>
       </div>
       <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-white font-bold text-sm uppercase">
         {#each pages_arr as page}
@@ -25,18 +25,16 @@
           </li>
         {/each}
       </ul>
-      <button on:click={toggleDark}>
-          <img class="hidden md:block w-5 cursor-pointer border-none active:outline-none focus:outline-none" src="/src/assets/moon.png" alt="" />
+      <button on:click={toggleDark} class="hidden md:block w-5 active:outline-none focus:outline-none">
+        <img class="w-5" src="/src/assets/moon.png" alt="" />
       </button>
-      <!-- Hamberger -->
+      <!-- Hamburger -->
       <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-        <div class="w-6 h-1 bg-black"></div>
-        <div class="w-6 h-1 bg-black"></div>
-        <div class="w-6 h-1 bg-black"></div>
+        <div class="w-6 h-1 bg-black dark:bg-white"></div>
+        <div class="w-6 h-1 bg-black dark:bg-white"></div>
+        <div class="w-6 h-1 bg-black dark:bg-white"></div>
       </div>
-      <ul
-        id="menu"
-        class="hidden bg-white absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-black text-center
+      <ul id="menu" class="hidden bg-white absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-black text-center
         dark:bg-slate-500 dark:text-white"
       >
         {#each pages_arr as page}

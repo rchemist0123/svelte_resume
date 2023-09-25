@@ -65,10 +65,6 @@
   $:checkHref = () => {
 
   }
-  
-  
-  
-  
 </script>
 
 <!-- <Navbar let:hidden let:toggle navClass="sticky top-0 navigation dark:bg-slate-900">
@@ -92,15 +88,14 @@
     {/each}
   </NavUl>
 </Navbar> -->
-<div class="sm:h-screen relative">
-  {#if showResume === true}
-    <Resume on:backToPage={closeResume}/>
-  {:else}
-    <NavPage />
-    <Intro />
-    <About on:resumetest={openResume}/>
-    <PortfolioPage />
-    <ContactMe />
-  {/if}
-  <Footer />
-</div>
+{#if showResume === true}
+  <Resume on:backToPage={closeResume}/>
+{:else}
+  <NavPage />
+  <Intro />
+  <About on:resumetest={openResume}/>
+  <PortfolioPage />
+  <ContactMe />
+{/if}
+<Footer />
+

@@ -22,6 +22,12 @@ const config = {
           900: '#A5371B'
         }
       },
+      // screens: {
+      //   sm:"390px",
+      //   md: "768px",
+      //   lg: "1024px",
+      //   xl: "1280px",
+      // },
       fontSize: {
         // sm: '15px',
         // base: '18px'
