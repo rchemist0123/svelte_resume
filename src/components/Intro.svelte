@@ -23,13 +23,13 @@
         안녕하세요! 데이터를 다루고, 분석하고, 시각화하는 것을 좋아합니다. 개발은 취미입니다 🤣
       </p>
       <div class="flex mt-4 space-x-6 justify-center md:justify-start md:mt-0">
-        <FooterIcon href="https://github.com/rchemist0123">
+        <FooterIcon href="https://github.com/rchemist0123" target="_blank">
           <GithubSolid class="w-4 h-4 text-black dark:text-white hover:text-primary-600" />
         </FooterIcon>
-        <FooterIcon href="https://www.linkedin.com/in/danjang0123/">
+        <FooterIcon href="https://www.linkedin.com/in/danjang0123/" target="_blank">
           <LinkedinSolid class="w-4 h-4 text-black dark:text-white hover:text-primary-600" />
         </FooterIcon>    
-        <FooterIcon href="https://rchemistblog.com/">
+        <FooterIcon href="https://rchemistblog.com/" target="_blank">
           <BookSolid class="w-4 h-4 text-black dark:text-white hover:text-primary-600" />
         </FooterIcon>    
       </div>
@@ -43,7 +43,7 @@
   </section>
   <div class="mx-auto py-10 flex flex-col flex-wrap md:flex-row gap-5 justify-center">
     <p class="font-semibold text-black text-xl dark:text-white">Skills</p>
-    <div class="grid grid-cols-4 justify-items-center md:flex md:flex-row md:gap-20 md:justify-center">
+    <div class="grid grid-cols-4 justify-items-center gap-y-4 md:flex md:flex-row md:gap-20 md:justify-center">
       {#each sources as source}
         <img src={source.dir} alt={source.alt} class="h-6 w-6 my-1 hover:scale-125 transition duration-200"/>
         <Tooltip>{source.alt}</Tooltip>

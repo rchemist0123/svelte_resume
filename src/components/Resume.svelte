@@ -1,6 +1,6 @@
 <script>
   import * as resume from '../lib/ResumeData.js';
-  import { Img, Heading, List, Li, A } from 'flowbite-svelte';
+  import { Img, Heading, List, Li } from 'flowbite-svelte';
 
   import {createEventDispatcher} from 'svelte';
 
@@ -19,7 +19,7 @@
     <p class='text-lg'>안녕하세요! 헬스케어 데이터분석 연구원 장연훈입니다.</p>
     <p class='text-lg'><span class="underline decoration-wavy decoration-primary-500">데이터 분석,웹 개발</span> 등 코딩하는 것을 좋아합니다.</p>
     <p class='text-lg'>헬스케어 데이터로 건강 문제를 해결하는 것에 관심이 많습니다.</p>
-    <ul class="my-2">
+    <ul class="my-10">
       <li><a target="_blank" class="hover:text-primary-500" href="mailto:danjang0123@gmail.com">✉️ Email</a></li>
       <li><a target="_blank" class="hover:text-primary-500" href="https://www.linkedin.com/in/danjang0123/">🖇️ Linkedin</a></li>
       <li><a target="_blank" class="hover:text-primary-500" href="https://Rchemistblog.com/">📝 Blog</a></li>
@@ -62,13 +62,26 @@
     </List>
   </div>
   <div class="text-left my-20">
-    <Heading tag="h1" class="bottom-line">📑 논문</Heading>
+    <Heading tag="h1" class="bottom-line">🖥️ 자격증</Heading>
     <hr class="mt-2 mb-5"/>
     <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
-      {#each resume.papers as paper}
-        <A href={paper.doi} target="_blank" class="text-gray-500 hover:text-primary-500">{paper.ref}</A>
+      {#each resume.certificates as certificate}
+        <Li>
+          {certificate.title} | {certificate.date}
+        </Li>
       {/each}
     </List>
+  </div>
+  <div class="text-left my-20">
+    <Heading tag="h1" class="bottom-line">📑 논문</Heading>
+    <hr class="mt-2 mb-5"/>
+    <ul class="space-y-0.5 text-gray-500">
+      {#each resume.papers as paper}
+      <li>
+        <a href={paper.doi} target="_blank" class="text-gray-500 hover:text-primary-500">{paper.ref}</a>
+      </li>
+      {/each}
+    </ul>
   </div>
   <div class="text-left my-20">
     <Heading tag="h1" class="bottom-line">💼 업무 방식</Heading>

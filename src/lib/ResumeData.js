@@ -13,6 +13,10 @@ const educations = [
   {title: '건국대학교 중어중문학과', period: '2013.03-2019.02'},
 ]
 
+const certificates = [
+  {title: '빅데이터분석기사', date:'2021.07'},
+  {title: 'ADsP', date: '2021.06'}
+]
 const careers = [
   {title: '분당서울대학교병원 디지털헬스케어연구사업부',
   period:'2021.06  현재',
@@ -36,4 +40,4 @@ const howIWork = [
   "업무 기한을 반드시 지킵니다.",
 ]
 
-export { skills, educations, papers, careers, howIWork }
+export { skills, educations, certificates, papers, careers, howIWork }

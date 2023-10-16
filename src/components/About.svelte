@@ -17,7 +17,7 @@
     <div class="my-auto flex flex-col gap-4 text-center md:text-left">
       <p class="font-extrabold text-lg text-primary-600">ABOUT ME</p>
       <p class="font-semibold text-md dark:text-white">코딩을 통한 효율적인 업무 처리</p>
-      <p class="text-slate-400 text-md">헬스케어 데이터를 다루는 데이터 분석가입니다. 코딩이 재밌어서 SQL, 웹 개발도 공부하였습니다. 지금은 취미로 웹 개발을 하고 있습니다. 효율성을 가장 중요하게 생각합니다. 일을 완료할 때 느끼는 성취감을 좋아합니다.</p>
+      <p class="text-slate-400 text-md">헬스케어 데이터를 다루는 데이터 분석가입니다. 비전공자이지만, 코딩이 재밌어서 SQL, 웹 개발도 혼자 공부하고 있습니다. 업무에서 효율성을 가장 중요하게 생각합니다. 일을 완료할 때 느끼는 성취감을 좋아합니다.</p>
       <div class="">
         <button class="group px-4 py-2 rounded-xl border-primary-400 bg-white 
           hover:outline-none hover:border-primary-400
