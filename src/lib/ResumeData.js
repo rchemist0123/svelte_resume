@@ -1,3 +1,5 @@
+import { TicketOutline } from "flowbite-svelte-icons"
+
 const skills = [
   {title:"R", description: "데이터 핸들링, 데이터 전처리, 데이터 시각화, 통계분석, 머신 러닝, 대시보드 제작(Shiny) 가능"},
   {title:"Python", description: "데이터 핸들링, 데이터 전처리, 데이터 시각화, 머신 러닝, FastAPI"},
@@ -17,12 +19,21 @@ const careers = [
   description: ['국민건강보험공단(NHIS)','MIMIC-IV', 'Korean Sepsis Alliance (KSA)']}
 ]
 
+const papers = [
+  {ref:'Song MJ, Jang Y, Lee JH, et al. Association of Dexmedetomidine With New-Onset Atrial Fibrillation in Patients With Critical Illness. JAMA Netw Open. 2023;6(4):e239955.', doi:'https://doi.org/10.1001/jamanetworkopen.2023.9955'},
+  {ref:'Moon JH, Jang Y, Oh TJ, Jung SY. The Risk of Type 2 Diabetes Mellitus according to Changes in Obesity Status in Late Middle-Aged Adults: A Nationwide Cohort Study of Korea. Diabetes Metab J. 2023;47(4):514-522.', doi:'https://doi.org/10.4093/dmj.2022.0159'},
+  {ref:'Jang Y, You M, Park G, et al. Analysis of Communication Content on Bedside Rounds in a Hospital - Implications for Patient Centered Communication Qual Improv Health Care. 2023;29(1):43-57.', doi:'https://doi.org/10.14371/QIH.2023.29.1.43'},
+  {ref:'Jung SY, Jang Y, Bae WK, Han JS. Changes of Body Mass Index and the Incidence of Hypertension in Late Middle Age: A Nationwide Cohort Study in South Korea. Korean J Health Promot 2022;22(4):175-182.', doi:'https://doi.org/10.15384/kjhp.2022.22.4.175'},
+  {ref:'Jang Y, You M, Lee H, et al. Burnout and peritraumatic distress of healthcare workers in the COVID-19 pandemic. BMC Public Health 2021;21, 2075', doi:'https://doi.org/10.1186/s12889-021-11978-0'},
+  {ref:'Jang Y, You M, Lee S, Lee W. Factors Associated With the Work Intention of Hospital Workers’ in South Korea During the Early Stages of the COVID-19 Outbreak. Disaster Medicine and Public Health Preparedness, 2021;15(3), E23-E30.', doi:'https://doi.org/10.1017/dmp.2020.221'},
+]
+
 const howIWork = [
   "목표 달성을 통해 느끼는 성취감을 좋아합니다.",
-  "회사와 세상에 긍정적 영향을 주는 일은 그 자체로 동기부여가 됩니다.",
+  "계획적으로 업무를 준비하고 수행합니다.",
   "어떤 일이든 나를 성장시키기 위한 기회라고 생각하고 적극적으로 일합니다.",
   "문제가 생겨도 그 상황 안에서 일을 진행할 수 있는 방향을 찾습니다.",
   "업무 기한을 반드시 지킵니다.",
 ]
 
-export { skills, educations, careers, howIWork }
+export { skills, educations, papers, careers, howIWork }

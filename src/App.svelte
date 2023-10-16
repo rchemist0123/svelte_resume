@@ -59,42 +59,20 @@
     sec2loc.scrollIntoView({behavior: "smooth", block: "start"});
   }
 </script>
-
-<!-- <Navbar let:hidden let:toggle navClass="sticky top-0 navigation dark:bg-slate-900">
-  <NavBrand href="/">
-    <span class="self-center whitespace-nowrap text-xl text-black font-semibold dark:text-white tracking-tight">Yeonhoon's Resumé</span>
-  </NavBrand>
-  <div class="flex md:order-2">
-    <Button color="none" data-collapse-toggle="mobile-menu-3" aria-controls="mobile-menu-3" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
-      <DarkMode />
-    </Button>
-    <div class="hidden relative md:block">
-      <div class="flex absolute inset-y-0 left-0 items-center pl-3">
-        <DarkMode />
-      </div>
-    </div>
-    <NavHamburger on:click={toggle} />
-  </div>
-  <NavUl {activeUrl} {hidden} {activeClass} {nonActiveClass}>
-    {#each pages_arr as page}
-    <NavLi navClass="" href={page.href} on:click={()=>currentPage=page.name}>{page.text}</NavLi>
-    {/each}
-  </NavUl>
-</Navbar> -->
 <!-- <div class="relative"> -->
   <!-- </div> -->
   {#if showResume === true}
-  <Resume on:backToPage={closeResume}/>
+    <Resume on:backToPage={closeResume}/>
   {:else}
-  <NavPage />
-  <ScrollTopBtn />
-  <div class="sticky right-0 bg-gray-200 rounded-full w-2.5 dark:bg-gray-700" >
-    <div class="bg-blue-600 h-full w-2.5 rounded-full" id="scroller"></div>
-  </div>
-  <Intro />
-  <About on:resumetest={openResume}/>
-  <PortfolioPage />
-  <ContactMe />
-{/if}
+    <NavPage />
+    <ScrollTopBtn />
+    <div class="sticky right-0 bg-gray-200 rounded-full w-2.5 dark:bg-gray-700" >
+      <div class="bg-blue-600 h-full w-2.5 rounded-full" id="scroller"></div>
+    </div>
+    <Intro />
+    <About on:resumetest={openResume}/>
+    <PortfolioPage />
+    <ContactMe />
+  {/if}
 <Footer />
 

@@ -30,9 +30,10 @@
           </li>
         {/each}
       </ul>
-      <button on:click={toggleDark} class="hidden md:block w-5 active:outline-none focus:outline-none">
+      <!-- Dark mode -->
+      <!-- <button on:click={toggleDark} class="hidden md:block w-5 active:outline-none focus:outline-none">
         <img class="w-5" src="/src/assets/moon.png" alt="" />
-      </button>
+      </button> -->
       <!-- Hamburger -->
       <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">

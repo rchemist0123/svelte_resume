@@ -1,6 +1,6 @@
 <script>
   import * as resume from '../lib/ResumeData.js';
-  import { Img, Heading, List, Li } from 'flowbite-svelte';
+  import { Img, Heading, List, Li, A } from 'flowbite-svelte';
 
   import {createEventDispatcher} from 'svelte';
 
@@ -12,20 +12,21 @@
 
 </script>
 
-<section class='p-20'>
+<section class='p-8'>
   <div class="text-center mt-2">
     <Img src="/src/assets/meme.png" alt="My profile" class="rounded-full w-48 h-48 border-4 border-primary-500" alignment="mx-auto"/>
     <br />
-    <p>안녕하세요! 헬스케어 데이터분석 연구원 장연훈입니다.</p>
-    <p><span class="underline decoration-wavy decoration-primary-500">데이터 분석,웹개발</span> 등 코딩하는 것을 좋아합니다.</p>
-    <p>헬스케어 데이터로 건강 문제를 해결하는 것에 관심이 많습니다.</p>
+    <p class='text-lg'>안녕하세요! 헬스케어 데이터분석 연구원 장연훈입니다.</p>
+    <p class='text-lg'><span class="underline decoration-wavy decoration-primary-500">데이터 분석,웹 개발</span> 등 코딩하는 것을 좋아합니다.</p>
+    <p class='text-lg'>헬스케어 데이터로 건강 문제를 해결하는 것에 관심이 많습니다.</p>
     <ul class="my-2">
-      <li class="before:content-['✉️']"> Email: <a class="hover:text-primary-500"href="mailto:danjang0123@gmail.com">danjang0123@gmail.com</a></li>
-      <li>🖇️ SNS: <a class="hover:text-primary-500" href="https://www.linkedin.com/in/danjang0123/">Linkedin</a></li>
+      <li><a target="_blank" class="hover:text-primary-500" href="mailto:danjang0123@gmail.com">✉️ Email</a></li>
+      <li><a target="_blank" class="hover:text-primary-500" href="https://www.linkedin.com/in/danjang0123/">🖇️ Linkedin</a></li>
+      <li><a target="_blank" class="hover:text-primary-500" href="https://Rchemistblog.com/">📝 Blog</a></li>
     </ul>
   </div>
   <div class="text-left my-20">
-    <Heading tag="h1">Profile</Heading>
+    <Heading tag="h1">🧑🏻‍💻 프로필</Heading>
     <hr class="mt-2 mb-5"/>
     <div>
       <Heading tag="h5">경력</Heading>
@@ -61,7 +62,16 @@
     </List>
   </div>
   <div class="text-left my-20">
-    <Heading tag="h1" class="bottom-line">💼 일하는 방식</Heading>
+    <Heading tag="h1" class="bottom-line">📑 논문</Heading>
+    <hr class="mt-2 mb-5"/>
+    <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
+      {#each resume.papers as paper}
+        <A href={paper.doi} target="_blank" class="text-gray-500 hover:text-primary-500">{paper.ref}</A>
+      {/each}
+    </List>
+  </div>
+  <div class="text-left my-20">
+    <Heading tag="h1" class="bottom-line">💼 업무 방식</Heading>
     <hr class="mt-2 mb-5"/>
     <List tag="ul" class="space-y-0.5 text-gray-500 dark:text-gray-400">
       {#each resume.howIWork as work}
