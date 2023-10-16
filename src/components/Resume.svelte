@@ -14,7 +14,7 @@
 
 <section class='p-8'>
   <div class="text-center mt-2">
-    <Img src="/src/assets/meme.png" alt="My profile" class="rounded-full w-48 h-48 border-4 border-primary-500" alignment="mx-auto"/>
+    <Img src="images/meme.png" alt="My profile" class="rounded-full w-48 h-48 border-4 border-primary-500" alignment="mx-auto"/>
     <br />
     <p class='text-lg'>안녕하세요! 헬스케어 데이터분석 연구원 장연훈입니다.</p>
     <p class='text-lg'><span class="underline decoration-wavy decoration-primary-500">데이터 분석,웹 개발</span> 등 코딩하는 것을 좋아합니다.</p>

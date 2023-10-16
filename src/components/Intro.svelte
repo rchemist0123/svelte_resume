@@ -3,14 +3,14 @@
   import { Heading, P, FooterIcon, Tooltip} from 'flowbite-svelte'
   import { GithubSolid, LinkedinSolid, BookSolid } from 'flowbite-svelte-icons'
   let sources = [
-    {dir: "/src/assets/R.svg", alt: "R"},
-    {dir: "/src/assets/python.svg", alt: "Python"},
-    {dir: "/src/assets/postgresql.svg", alt: "PostgreSQL"},
-    {dir: "/src/assets/html5.svg", alt: "HTML5"},
-    {dir: "/src/assets/css3.svg", alt: "CSS3"},
-    {dir: "/src/assets/js.svg", alt: "JavaScript"},
-    {dir: "/src/assets/svelte.svg", alt: "Svelte"},
-    {dir: "/src/assets/tailwindcss.svg", alt: "TailwindCSS"},
+    {dir: "images/R.svg", alt: "R"},
+    {dir: "images/python.svg", alt: "Python"},
+    {dir: "images/postgresql.svg", alt: "PostgreSQL"},
+    {dir: "images/html5.svg", alt: "HTML5"},
+    {dir: "images/css3.svg", alt: "CSS3"},
+    {dir: "images/js.svg", alt: "JavaScript"},
+    {dir: "images/svelte.svg", alt: "Svelte"},
+    {dir: "images/tailwindcss.svg", alt: "TailwindCSS"},
   ]
 </script>
 
@@ -37,7 +37,7 @@
     <!-- right -->
     <div class="">
       <div class="max-w-xs rounded-full">
-        <img src="/src/assets/meme.png" alt="" >
+        <img src="images/meme.png" alt="" >
       </div>
     </div>
   </section>

@@ -11,7 +11,7 @@
   <!-- left -->
   <div class=" py-20 md:py-40 flex flex-col-reverse items-center md:flex-row gap-10">
     <div class="w-11/12">
-      <img class="rounded-3xl" src="/src/assets/laptop.jpg" alt="" />
+      <img class="rounded-3xl" src="images/laptop.jpg" alt="" />
     </div>
     <!-- right -->
     <div class="my-auto flex flex-col gap-4 text-center md:text-left">
