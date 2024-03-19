@@ -24,6 +24,8 @@ const careers = [
 ]
 
 const papers = [
+  // AMA style
+  {ref:'Park H, Jung SY, Han MK, Jang Y, Moon YR, Kim T, Shin S-Y, Hwang H. Lowering Barriers to Health Risk Assessments in Promoting Personalized Health Management. Journal of Personalized Medicine. 2024; 14(3):316.', doi: 'https://doi.org/10.3390/jpm14030316'},
   {ref:'Song MJ, Jang Y, Lee JH, et al. Association of Dexmedetomidine With New-Onset Atrial Fibrillation in Patients With Critical Illness. JAMA Netw Open. 2023;6(4):e239955.', doi:'https://doi.org/10.1001/jamanetworkopen.2023.9955'},
   {ref:'Moon JH, Jang Y, Oh TJ, Jung SY. The Risk of Type 2 Diabetes Mellitus according to Changes in Obesity Status in Late Middle-Aged Adults: A Nationwide Cohort Study of Korea. Diabetes Metab J. 2023;47(4):514-522.', doi:'https://doi.org/10.4093/dmj.2022.0159'},
   {ref:'Jang Y, You M, Park G, et al. Analysis of Communication Content on Bedside Rounds in a Hospital - Implications for Patient Centered Communication Qual Improv Health Care. 2023;29(1):43-57.', doi:'https://doi.org/10.14371/QIH.2023.29.1.43'},
