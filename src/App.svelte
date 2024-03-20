@@ -5,6 +5,7 @@
   import About from './components/About.svelte';
   import Resume from './components/Resume.svelte';
   import PortfolioPage from "./components/PortfolioPage.svelte";
+  import Presentation from './components/Presentation.svelte';
   import ContactMe from './components/ContactMe.svelte';
   import Footer from './components/Footer.svelte';
   import ScrollTopBtn from './components/ScrollTopBtn.svelte';
@@ -72,6 +73,7 @@
     <Intro />
     <About on:resumetest={openResume}/>
     <PortfolioPage />
+    <Presentation />
     <ContactMe />
   {/if}
 <Footer />
