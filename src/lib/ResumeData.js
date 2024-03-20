@@ -15,11 +15,12 @@ const educations = [
 
 const certificates = [
   {title: '빅데이터분석기사', date:'2021.07'},
+  {title: 'SQLD', date:'2021.06'},
   {title: 'ADsP', date: '2021.06'}
 ]
 const careers = [
   {title: '분당서울대학교병원 디지털헬스케어연구사업부',
-  period:'2021.06  현재',
+  period:'2021.06 ~ ',
   description: ['국민건강보험공단(NHIS)','MIMIC-IV', 'Korean Sepsis Alliance (KSA)']}
 ]
 
